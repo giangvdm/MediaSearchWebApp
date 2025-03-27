@@ -1,0 +1,20 @@
+{
+    "name": "Media Search Webapp",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/var/www",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "xdebug.php-pack",
+                "bmewburn.vscode-intelephense-client",
+                "ms-azuretools.vscode-docker"
+            ],
+            "settings": {
+                "php.validate.executablePath": "/usr/local/bin/php"
+            }
+        }
+    },
+    "postCreateCommand": "chmod +x .devcontainer/setup.sh && bash .devcontainer/setup.sh"
+}
+  
