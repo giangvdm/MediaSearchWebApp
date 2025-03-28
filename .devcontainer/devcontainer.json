@@ -3,6 +3,11 @@
     "dockerComposeFile": "../docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/var/www",
+    "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+        "version": "18"
+        }
+    },
     "customizations": {
         "vscode": {
             "extensions": [
